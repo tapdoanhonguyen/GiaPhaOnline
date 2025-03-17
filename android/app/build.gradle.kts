@@ -31,8 +31,12 @@ android {
             signingConfig = signingConfigs.getByName("debug")
         }
     }
-    buildToolsVersion = "36.0.0"
+    buildToolsVersion = "34.0.0"
     ndkVersion = "26.3.11579264"
+    compileOptions {
+        sourceCompatibility = VERSION_1_6
+        targetCompatibility = VERSION_1_6
+    }
 }
 
 flutter {
