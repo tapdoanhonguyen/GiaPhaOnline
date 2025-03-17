@@ -8,12 +8,6 @@ plugins {
 android {
     namespace = "com.example.giaphaonline"
     compileSdk = 35
-    ndkVersion = "26.3.11579264"
-
-    compileOptions {
-        sourceCompatibility = VERSION_17
-        targetCompatibility = VERSION_17
-    }
 
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_11.toString()
@@ -38,6 +32,7 @@ android {
         }
     }
     buildToolsVersion = "36.0.0"
+    ndkVersion = "26.3.11579264"
 }
 
 flutter {
